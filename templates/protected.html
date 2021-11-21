@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Coin</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+
+    body {
+      margin: 0;
+      position: absolute;
+      top: 13%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);      /* to center containers */
+
+      background-image: url("/images/suret.jpg");
+      background-size: cover;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      color: bisque;                      /* other styling */
+    }
+
+    .form {
+      width: 750px;
+      height: 100%;
+      margin: 0;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);     /* to center form elements */
+    }
+
+    #main{
+      height: 450px;
+      border-radius: 25px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow-y: scroll;                /* to make scrollable but scroll hidden */
+    }
+
+    #main::-webkit-scrollbar {
+      display: none;                    /* to make scrollable but scroll hidden */
+    }
+
+    a{
+        color: white;
+    }
+}
+  </style>
+</head>
+<body>
+    <div class="form">
+    <form method = "post">
+      <h1 style="color: bisque; padding-bottom: 20px; font-size: 50px;">Coin search</h1>
+        <div class="row">
+          <div class="col-10">
+            <div class="form-floating mb-3">
+              <input type="text" name = "coin" class="form-control" id="floatingInput">
+              <label for="floatingInput" style="color: black;">Enter the coin name</label>
+            </div>
+          </div>
+          <div class="col-2">
+            <button style="height: 55px;" type="submit" class="btn btn-warning">Search</button>
+          </div>
+        </div>
+      </form>
+    {% if articles %}
+      <div id="main" style="background: rgba(30, 35, 40, 0.9)">
+      {% for article in articles: %}
+            <h1>{{article.title}}</h1>
+            <p>{{article.body}}</p>
+            <a href="{{article.link}}">{{article.link}}</a><br><br>
+        {% endfor %}
+      </div>
+    {% endif %}
+    </div>
+</body>
