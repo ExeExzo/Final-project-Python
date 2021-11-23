@@ -14,7 +14,7 @@ Then you need to run local server by running server.py from your IDE or from com
 python server.py
 
 ```
-Now you can open your browser to create a login, password and send requests:
+Now you can open your browser to create an account or you already have then log in and send requests:
 - route /login
 
 After you create or log in to your account. A page with text input and a button will appear. Just enter the correct name of the coin, and then wait a little (or more) while the analyzer looks through the articles and summarizes the results. The next time you enter the same coin, you don't have to wait because it takes the saved articles from the database.
