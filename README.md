@@ -20,9 +20,14 @@ Now you can open your browser to create a login, password and send requests:
 After you create or log in to your account. A page with text input and a button will appear. Just enter the correct name of the coin, and then wait a little (or more) while the analyzer looks through the articles and summarizes the results. The next time you enter the same coin, you don't have to wait because it takes the saved articles from the database.
 
 ### Examples
+Login
+![login](https://user-images.githubusercontent.com/74852501/143067880-7f2b1d95-7cf0-45f2-a16b-b687f3562a85.png)
+
+If you don't have an account register
+![sign_up](https://user-images.githubusercontent.com/74852501/143067939-bdfb9f7d-0494-4965-9bb4-09fa3a1421ca.png)
+
 Enter the name of the coin
-![Screenshot 2021-11-07 183802](https://user-images.githubusercontent.com/74852501/140645619-678e2d61-a3ef-4ae5-9339-fcd9b72641e0.png)
+![coin_name](https://user-images.githubusercontent.com/74852501/143068080-2b329834-f004-46fd-bd8f-7ad7066e8362.png)
 
-Then wait a little
-![Screenshot 2021-11-07 185134](https://user-images.githubusercontent.com/74852501/140645673-b957c38f-a674-4275-a5b5-300d210a4ba3.png)
-
+Then wait a little(or more)
+![search](https://user-images.githubusercontent.com/74852501/143068203-4f1cc8b9-d5a8-4e9e-b574-c157504693ca.png)
